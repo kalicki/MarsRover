@@ -61,6 +61,7 @@ public class Rover {
 				break;
 			case 'E': 					// East X+1
 				pos.getX(); 			// +1
+				break;
 			case 'W': 					// West X-1
 				pos.getX(); 			// decrement -1
 				break;
