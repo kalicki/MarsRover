@@ -2,7 +2,7 @@
 public class Position {
 	private int x;
 	private int y;
-	private char front;
+	private char front = 'N';
 	
 	public Position(int x, int y, char front) {
 		this.setX(x);

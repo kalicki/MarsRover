@@ -1,42 +1,43 @@
 
 public class Rover {
 	private Position pos;
-
-	public Rover() {
-
+	
+	public Rover(Position pos) {
+		this.pos = pos;
 	}
 
-	private void instructionsRover(String instructions) {
+	public void instructionsRover(String instructions) {
 		for (char c : instructions.toCharArray()) {
+			System.out.println(c);
 
 			switch (c) {
 				case 'L':
 					// Left: North -> West
-					if (pos.getFront() == 'N') {
+					if (pos.getFront() == (char) 'N') {
 						pos.setFront('W');
 					}
-					if (pos.getFront() == 'S') {
+					if (pos.getFront() == (char) 'S') {
 						pos.setFront('E');
 					}
-					if (pos.getFront() == 'E') {
+					if (pos.getFront() == (char) 'E') {
 						pos.setFront('N');
 					}
-					if (pos.getFront() == 'W') {
+					if (pos.getFront() == (char) 'W') {
 						pos.setFront('S');
 					}
 					break;
 				case 'R':
 					// Right: North -> East
-					if (pos.getFront() == 'N') {
+					if (pos.getFront() == (char)'N') {
 						pos.setFront('E');
 					}
-					if (pos.getFront() == 'S') {
+					if (pos.getFront() == (char)'S') {
 						pos.setFront('W');
 					}
-					if (pos.getFront() == 'E') {
+					if (pos.getFront() == (char)'E') {
 						pos.setFront('S');
 					}
-					if (pos.getFront() == 'W') {
+					if (pos.getFront() == (char)'W') {
 						pos.setFront('N');
 					}
 	
