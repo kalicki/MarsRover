@@ -54,16 +54,16 @@ public class Rover {
 	private void moveRover() {
 		switch (pos.getFront()) {
 			case 'N': 					//North Y+1
-				pos.getY(); 			// +1
+				pos.setY( pos.getY() + 1);
 				break;
 			case 'S': 					// South Y-1
-				pos.getY(); 			// decrement -1
+				pos.setY( pos.getY() - 1);
 				break;
 			case 'E': 					// East X+1
-				pos.getX(); 			// +1
+				pos.setX( pos.getX() + 1);
 				break;
 			case 'W': 					// West X-1
-				pos.getX(); 			// decrement -1
+				pos.setX( pos.getX() - 1);
 				break;
 		}
 	}
